@@ -1,0 +1,108 @@
+# ============================
+# Environment and secrets
+# ============================
+.env
+.env.*
+!.env.example
+
+# ============================
+# Python (backend)
+# ============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+*.cover
+htmlcov/
+
+# Packaging artifacts
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local model and tool caches
+.cache/
+.huggingface/
+models/
+
+# Generated RAG artifacts
+chunks.json
+bm25_stats.json
+users.json
+auth_data/users.json
+qdrant_hybrid_db/
+qdrant_local_db/
+processed_data/
+
+# Local databases and SQLite files
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================
+# Node / Next.js (frontend)
+# ============================
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ============================
+# Editor/IDE
+# ============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================
+# Notebook checkpoints
+# ============================
+.ipynb_checkpoints/
+
+# ============================
+# Logs and temporary files
+# ============================
+*.log
+*.tmp
+*.bak
+*.pem
+.DS_Store
+Thumbs.db
