@@ -1,0 +1,7 @@
+[
+  {
+    "username": "example.user",
+    "password_hash": "replace-with-bcrypt-hash",
+    "role": "doctor"
+  }
+]

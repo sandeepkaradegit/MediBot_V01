@@ -1,0 +1,62 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+*.cover
+htmlcov/
+
+# Packaging artifacts
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local model and tool caches
+.cache/
+.huggingface/
+models/
+
+# Generated RAG artifacts
+chunks.json
+bm25_stats.json
+users.json
+auth_data/users.json
+qdrant_hybrid_db/
+qdrant_local_db/
+processed_data/
+
+# Local databases and SQLite files
+*.db
+*.sqlite
+*.sqlite3
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db

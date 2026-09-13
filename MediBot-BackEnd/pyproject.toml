@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medibot"
+version = "0.1.0"
+description = "MediBot: Docling ingestion + Qdrant hybrid RBAC-filtered retrieval"
+requires-python = ">=3.10"
+dependencies = [
+    "docling>=2.100.0",
+    "docling-core[chunking]>=2.70.0",
+    "transformers>=4.34.0",
+    "qdrant-client>=1.19.0",
+    "sentence-transformers>=6.0.0",
+    "langchain-community>=0.3.0",
+    "langchain-groq>=0.2.0",
+    "python-dotenv>=1.0.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "pyjwt>=2.9.0",
+    "passlib[bcrypt]>=1.7.4",
+    "bcrypt==4.0.1",
+    "python-multipart>=0.0.32",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
