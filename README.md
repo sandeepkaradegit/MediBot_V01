@@ -20,6 +20,6 @@ raw_data/
 1. Identify which category your document belongs to (billing, clinical, equipment, general, nursing, or db).
 2. Copy the file into the matching subfolder under `raw_data/mediassist_data/` (or `raw_data/db/` for structured data).
 3. Each subfolder has its own `readme.md` — check it for any category-specific notes before adding files.
-4. Refer Readme.md respectively in MediBot-BackEnd and MediBot-FronEnd folder resepctive to understand more about flow and running the application.
+4. Refer Readme.md respectively in MediBot-BackEnd and MediBot-FrontEnd folder resepctive to understand more about flow and running the application.
 
 > ⚠️ Do not place files directly in `raw_data/` or `mediassist_data/` — they must go inside the correct category subfolder, or the ingestion step won't pick them up correctly.
